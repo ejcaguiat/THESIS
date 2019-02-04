@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+
+  "name": "Web Log Catcher",
+  "description": "This Chrome extension catches HTTP requests from the browser.",
+  "version": "3.1",
+
+  "permissions": [
+    "<all_urls>","webRequest","webRequestBlocking","storage","downloads"
+  ],
+  "background": {
+    "scripts": ["bgp.js"],
+    "persistent": true
+  }
+}
